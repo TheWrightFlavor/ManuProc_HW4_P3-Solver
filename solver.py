@@ -36,11 +36,7 @@ with open('output.csv','w') as file:
     
 x = []
 y = []
-first = True
-for i in entries:
-    if first:
-        first = False
-        continue
+for i in entries[1:]:
     x.append(i[0]-h_o)
     y.append(i[7])
 
